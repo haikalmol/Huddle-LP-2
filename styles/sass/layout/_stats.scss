@@ -1,0 +1,80 @@
+.stats {
+  $root: &;
+
+  @include breakpoint("lg") {
+    margin-bottom: 133px;
+  }
+
+  &.anim {
+    #{$root}__card {
+      &:first-child {
+        animation: slide-left 1000ms ease-in forwards;
+      }
+
+      &:last-child {
+        animation: slide-right 1000ms ease-in forwards;
+      }
+    }
+  }
+
+  &__container {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
+    @include breakpoint("sm") {
+      flex-flow: row;
+      justify-content: space-evenly;
+    }
+
+    @include breakpoint("lg") {
+      justify-content: space-between;
+      max-width: 880px;
+      margin: 0 auto;
+    }
+  }
+
+  &__card {
+    opacity: 0;
+    display: flex;
+    flex-flow: column;
+    min-width: 190px;
+
+    &:not(:last-child) {
+      margin-bottom: 83px;
+
+      @include breakpoint("sm") {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__card-icon {
+    align-self: flex-start;
+
+    i {
+      background: linear-gradient(to bottom, $c-pink, $c-pink-light);
+      background-clip: text;
+      -webkit-background-clip: text;
+      background-size: 100%;
+      color: transparent;
+      font-size: clamp(1.7rem, 3vw, 2rem);
+    }
+  }
+
+  &__card-counter {
+    font-size: clamp(3.8rem, 7vw, 6rem);
+    font-weight: 700;
+    color: $c-cyan-very-dark;
+
+    @include breakpoint("lg") {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__card-desc {
+    color: gray;
+    text-align: center;
+    font-size: clamp(1rem, 3vw, 1.5rem);
+  }
+}

@@ -1,0 +1,17 @@
+/* Colors */
+$c-pink: hsl(322, 100%, 66%);
+$c-pink-light: hsl(321, 100%, 78%);
+$c-red-light: hsl(0, 100%, 63%);
+$c-cyan-very-dark: hsl(192, 100%, 9%);
+$c-blue-very-pale: hsl(207, 100%, 98%);
+
+/* Fonts */
+$ff-primary: "Open Sans", sans-serif;
+$ff-secondary: "Poppins", sans-serif;
+
+/* Media query breakpoints */
+$breakpoints: (
+  "sm": 481px,
+  "md": 769px,
+  "lg": 1025px,
+);

@@ -1,0 +1,98 @@
+.cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: $ff-primary;
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+
+  &--sm {
+    position: relative;
+    width: calc(min(max(20vw, 80px), 135px));
+    height: calc(min(max(6vw, 26px), 40px));
+    font-size: clamp(0.6rem, 2vw, 1rem);
+    font-weight: 500;
+    color: $c-pink;
+    border: 1px solid $c-pink;
+    border-radius: 30px;
+    transition: border 350ms ease-in, color 350ms ease-in;
+
+    &:hover {
+      color: $c-pink-light;
+      border-color: $c-pink-light;
+      animation: cta-sm-hover 300ms ease-in;
+    }
+  }
+
+  &--start {
+    position: relative;
+    width: calc(min(max(45vw, 196px), 398px));
+    height: calc(min(max(6vw, 40px), 80px));
+    background: $c-pink;
+    font-size: clamp(0.75rem, 2vw, 1.3rem);
+    font-weight: 600;
+    color: #fff;
+    border-radius: 40px;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    z-index: 1;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 50%;
+      left: -10%;
+      width: 500px;
+      height: 150px;
+      transform: translate(0, -50%) scaleX(0.1);
+      transform-origin: right;
+      border-radius: 50%;
+      background: $c-pink-light;
+      z-index: -1;
+      opacity: 0;
+      transition: transform 350ms ease-in, opacity 350ms ease-in;
+    }
+
+    &:hover::before {
+      transform: translate(0, -50%) scaleX(1);
+      transform-origin: left;
+      opacity: 1;
+    }
+  }
+
+  &--sub {
+    position: relative;
+    width: 158px;
+    height: 48px;
+    font-size: 1.03rem;
+    font-weight: 600;
+    background: $c-pink;
+    border-radius: 4px;
+    border: none;
+    z-index: 1;
+    overflow: hidden;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 50%;
+      left: 50%;
+      width: 200px;
+      height: 150px;
+      transform: translate(-50%, -50%) scaleY(0);
+      transform-origin: bottom;
+      border-radius: 50%;
+      background: $c-pink-light;
+      z-index: -1;
+      opacity: 0;
+      transition: transform 350ms ease-in, opacity 350ms ease-in;
+    }
+
+    &:hover::before {
+      transform: translate(-50%, -50%) scaleX(1);
+      transform-origin: top;
+      opacity: 1;
+    }
+  }
+}

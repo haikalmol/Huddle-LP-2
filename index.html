@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/css/main.css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+    <title>Frontend Mentor | Huddle landing page with curved sections</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header__container">
+        <div class="header__logo">
+          <img src="assets/img/logo.svg" alt="" />
+        </div>
+        <a href="#" class="header__cta cta cta--sm">Try it free</a>
+      </div>
+    </header>
+
+    <!-- Key Visual -->
+    <section class="kv">
+      <div class="kv__container">
+        <h1 class="kv__heading h h--xlg">Build The Community Your Fans Will Love</h1>
+        <p class="kv__text text text--lg">Huddle re-imagines the way we build communities. You have a voice, but so does your audience. Create connections with your users as you engage in genuine discussion.</p>
+        <a href="#" class="kv__cta cta cta--start">Get Started For Free</a>
+        <div class="kv__hero">
+          <img src="assets/img/screen-mockups.svg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Statistics -->
+    <div class="stats" data-anim>
+      <div class="stats__container">
+        <div class="stats__card">
+          <div class="stats__card-icon">
+            <i class="i-communities"></i>
+          </div>
+          <p class="stats__card-counter">1.4k+</p>
+          <p class="stats__card-desc">Communities Formed</p>
+        </div>
+        <div class="stats__card">
+          <div class="stats__card-icon">
+            <i class="i-messages"></i>
+          </div>
+          <p class="stats__card-counter">2.7m+</p>
+          <p class="stats__card-desc">Messages Sent</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- About -->
+    <div class="about">
+      <div class="about__container">
+        <!-- Card 01 -->
+        <picture>
+          <source media="(min-width:769px)" srcset="assets/img/bg-section-top-desktop-1.svg" />
+          <img src="assets/img/bg-section-top-mobile-1.svg" alt="" class="about__bg" />
+        </picture>
+        <article class="about__card" data-anim>
+          <div class="about__card-wrapper">
+            <div class="about__card-content">
+              <h3 class="about__card-title h h--big">Grow Together</h3>
+              <p class="about__card-desc text text--big">Generate meaningful discussions with your audience and build a strong, loyal community. Think of the insightful conversations you miss out on with a feedback form.</p>
+            </div>
+            <div class="about__card-image">
+              <img src="assets/img/illustration-grow-together.svg" alt="" />
+            </div>
+          </div>
+        </article>
+        <picture>
+          <source media="(min-width:769px)" srcset="assets/img/bg-section-bottom-desktop-1.svg" />
+          <img src="assets/img/bg-section-bottom-mobile-1.svg" alt="" class="about__bg" />
+        </picture>
+        <!-- Card 02 -->
+        <article class="about__card about__card--white" data-anim>
+          <div class="about__card-wrapper">
+            <div class="about__card-content">
+              <h3 class="about__card-title h h--big">Flowing Conversations</h3>
+              <p class="about__card-desc text text--big">You wouldn't paginate a conversation in real life, so why do it online? Our threads have just-in-time loading for a more natural flow.</p>
+            </div>
+            <div class="about__card-image">
+              <img src="assets/img/illustration-flowing-conversation.svg" alt="" />
+            </div>
+          </div>
+        </article>
+        <!-- Card 03 -->
+        <picture>
+          <source media="(min-width:769px)" srcset="assets/img/bg-section-top-desktop-2.svg" />
+          <img src="assets/img/bg-section-top-mobile-2.svg" alt="" class="about__bg" />
+        </picture>
+        <article class="about__card" data-anim>
+          <div class="about__card-wrapper">
+            <div class="about__card-content">
+              <h3 class="about__card-title h h--big">Your Users</h3>
+              <p class="about__card-desc text text--big">It takes no time at all to integrate Huddle with your app's authentication solution. This means, once signed in to your app, your users can start chatting immediately.</p>
+            </div>
+            <div class="about__card-image">
+              <img src="assets/img/illustration-your-users.svg" alt="" />
+            </div>
+          </div>
+        </article>
+        <picture>
+          <source media="(min-width:769px)" srcset="assets/img/bg-section-bottom-desktop-2.svg" />
+          <img src="assets/img/bg-section-bottom-mobile-2.svg" alt="" class="about__bg" />
+        </picture>
+      </div>
+    </div>
+
+    <!-- Start -->
+    <section class="start" data-anim>
+      <div class="start__container">
+        <h2 class="start__title h h--lg">Ready To Build Your Community?</h2>
+        <a href="" class="start__cta cta cta--start">Get Started For Free</a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <picture>
+        <source media="(min-width:769px)" srcset="assets/img/bg-footer-top-desktop.svg" />
+        <img src="assets/img/bg-footer-top-mobile.svg" alt="" class="footer__bg" />
+      </picture>
+      <div class="footer__container">
+        <div class="footer__wrapper">
+          <div class="footer__contact">
+            <div class="footer__contact-logo">
+              <img src="assets/img/logo-white.svg" alt="" />
+            </div>
+            <p class="footer__contact-text text text--md text--white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia vestibulum a, ultrices quis sem.</p>
+            <address class="footer__address">
+              <div class="footer__address-item">
+                <i class="footer__address-icon i-icon-phone"></i>
+                <a class="footer__address-link" href="tel:+1-543-123-4567">Phone: +1-543-123-4567</a>
+              </div>
+              <div class="footer__address-item">
+                <i class="footer__address-icon i-email"></i>
+                <a class="footer__address-link" href="mailto:example@company.com">example@company.com</a>
+              </div>
+            </address>
+            <div class="footer__socials">
+              <a href="#" class="footer__socials-link" aria-label="Follow us on Facebook">
+                <i class="footer__socials-icon i-facebook" aria-hidden="true"></i>
+              </a>
+              <a href="#" class="footer__socials-link" aria-label="Follow us on Instagram">
+                <i class="footer__socials-icon i-instagram" aria-hidden="true"></i>
+              </a>
+              <a href="#" class="footer__socials-link" aria-label="Follow us on Twitter">
+                <i class="footer__socials-icon i-twitter" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+          <div class="footer__news">
+            <h4 class="footer__news-title h h--md h--white h--tt-uc">Newsletter</h4>
+            <p class="footer__news-text text text--md text--white">To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never send you spam or pass on your email address</p>
+            <form action="#" class="footer__news-form" data-form>
+              <input type="email" name="mail" id="mail" class="footer__news-input" aria-label="Email input" placeholder="email@example.com" data-input />
+              <span class="footer__news-error">Check your email please</span>
+              <button type="submit" class="footer__news-cta cta cta--sub" data-cta>Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/app.js" type="module"></script>
+  </body>
+</html>

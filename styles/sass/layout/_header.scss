@@ -1,0 +1,32 @@
+.header {
+  $root: &;
+  margin-bottom: 86px;
+
+  @include breakpoint("lg") {
+    margin-bottom: 151px;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 26px;
+
+    @include breakpoint("md") {
+      padding: 50px 35px;
+    }
+
+    @include breakpoint("lg") {
+      max-width: 1390px;
+      margin: 0 auto;
+      padding: 79px 40px;
+    }
+  }
+
+  &__logo {
+    img {
+      display: block;
+      width: calc(min(max(20vw, 98px), 240px));
+    }
+  }
+}

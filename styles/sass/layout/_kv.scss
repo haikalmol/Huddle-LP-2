@@ -1,0 +1,43 @@
+.kv {
+  $root: &;
+  margin-bottom: 117px;
+
+  &__container {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: 0 30px;
+    text-align: center;
+  }
+
+  &__heading {
+    margin-bottom: 23px;
+  }
+
+  &__text {
+    margin-bottom: 44px;
+    max-width: 425px;
+
+    @include breakpoint("md") {
+      max-width: 480px;
+    }
+
+    @include breakpoint("lg") {
+      max-width: 630px;
+    }
+  }
+
+  &__cta {
+    margin-bottom: 100px;
+
+    @include breakpoint("lg") {
+      margin-bottom: 110px;
+    }
+  }
+
+  &__hero {
+    img {
+      width: 100%;
+    }
+  }
+}
